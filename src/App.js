@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import AboutPage from './Pages/AboutPage';
+import ContactPage from './Pages/ContactPage';
+import HomePage from './Pages/HomePage';
+import CustomizedItSolutionsPage from './Pages/CustomizedItSolutionsPage';
+import MobileAppDevelopmentPage from './Pages/MobileAppDevelopmentPage';
+import SoftwareMaintenancePage from './Pages/SoftwareMaintenancePage';
+import UiUxPage from './Pages/UiUxPage';
+import ServicesPage from './Pages/ServicesPage';
+import WebDesignPage from './Pages/WebDesignPage';
+import WebDevelopmentPage from './Pages/WebDevelopmentPage';
+import PortfolioPage from './Pages/PortfolioPage';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     
     </div>
   );
 }
