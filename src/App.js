@@ -1,4 +1,4 @@
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import AboutPage from './Pages/AboutPage';
 import ContactPage from './Pages/ContactPage';
 import HomePage from './Pages/HomePage';
@@ -14,6 +14,21 @@ import PortfolioPage from './Pages/PortfolioPage';
 function App() {
   return (
     <div className="App">
+      <Router>
+        <Routes>
+          <Route path='/' element={<HomePage/>}/>
+          <Route path='/contact' element={<ContactPage/>}/>
+          <Route path='/aboutUs' element={<AboutPage/>}/>
+          <Route path='/customizedItSolutions' element={<CustomizedItSolutionsPage/>}/>
+          <Route path='/mobileAppDevelopment' element={<MobileAppDevelopmentPage/>}/>
+          <Route path='/softwareMaintenance' element={<SoftwareMaintenancePage/>}/>
+          <Route path='/uiux' element={<UiUxPage/>}/>
+          <Route path='/services' element={<ServicesPage/>}/>
+          <Route path='/webDesign' element={<WebDesignPage/>}/>
+          <Route path='/webDevelopment' element={<WebDevelopmentPage/>}/>
+          <Route path='/portfolio' element={<PortfolioPage/>}/>
+        </Routes>
+      </Router>
      
     </div>
   );
