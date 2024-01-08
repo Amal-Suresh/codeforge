@@ -10,10 +10,12 @@ import ServicesPage from './Pages/ServicesPage';
 import WebDesignPage from './Pages/WebDesignPage';
 import WebDevelopmentPage from './Pages/WebDevelopmentPage';
 import PortfolioPage from './Pages/PortfolioPage';
+import Header from './components/Header/Header';
 
 function App() {
   return (
     <div className="App">
+      <Header/>
       <Router>
         <Routes>
           <Route path='/' element={<HomePage/>}/>
