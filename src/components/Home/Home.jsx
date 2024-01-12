@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Home = () => {
+const Home = ({setIcon}) => {
   return (
     <div className='font-extrabold text-red-700'>Home</div>
   )
