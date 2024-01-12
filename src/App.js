@@ -14,14 +14,12 @@ import Header from './components/Header/Header';
 import { useState } from 'react';
 
 function App() {
-  const [icon,setIcon] = useState(true)
-  console.log("icon : ",icon)
   return (
     <div className="App">
-      <Header icon={icon} />
+      <Header/>
       <Router>
         <Routes>
-          <Route path='/' element={<HomePage setIcon ={setIcon}/>}/>
+          <Route path='/' element={<HomePage/>}/>
           <Route path='/contact' element={<ContactPage/>}/>
           <Route path='/aboutUs' element={<AboutPage/>}/>
           <Route path='/customizedItSolutions' element={<CustomizedItSolutionsPage/>}/>

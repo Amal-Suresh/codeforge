@@ -1,10 +1,10 @@
 import React from 'react'
 import Home from '../components/Home/Home'
 
-const HomePage = ({setIcon}) => {
+const HomePage = () => {
  
   return (
-    <div className='w-full h-screen'><Home setIcon={setIcon}/></div>
+    <div><Home /></div>
 
   )
 }
