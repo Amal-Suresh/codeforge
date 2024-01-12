@@ -11,14 +11,17 @@ import WebDesignPage from './Pages/WebDesignPage';
 import WebDevelopmentPage from './Pages/WebDevelopmentPage';
 import PortfolioPage from './Pages/PortfolioPage';
 import Header from './components/Header/Header';
+import { useState } from 'react';
 
 function App() {
+  const [icon,setIcon] = useState(true)
+  console.log("icon : ",icon)
   return (
     <div className="App">
-      <Header/>
+      <Header icon={icon} />
       <Router>
         <Routes>
-          <Route path='/' element={<HomePage/>}/>
+          <Route path='/' element={<HomePage setIcon ={setIcon}/>}/>
           <Route path='/contact' element={<ContactPage/>}/>
           <Route path='/aboutUs' element={<AboutPage/>}/>
           <Route path='/customizedItSolutions' element={<CustomizedItSolutionsPage/>}/>

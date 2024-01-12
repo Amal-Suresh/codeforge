@@ -1,9 +1,11 @@
 import React from 'react'
 import Home from '../components/Home/Home'
 
-const HomePage = () => {
+const HomePage = ({setIcon}) => {
+ 
   return (
-    <div><Home/></div>
+    <div className='w-full h-screen'><Home setIcon={setIcon}/></div>
+
   )
 }
 
